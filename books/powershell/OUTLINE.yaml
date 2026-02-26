@@ -128,14 +128,12 @@ chapters:
   - 3.2.3 Performance: ForEach-Object vs. foreach statement
   - 3.2.4 Parallel Processing in PowerShell 7+
   - 3.2.5 Nested Pipelines and Scope
-  - 3.2.5.1 Variable Visibility
-  - 3.2.5.2 Pipeline Depth Limits
-  - 3.2.5.3 Nested Pipeline Patterns
-  - 3.2.5.4 Performance Implications
-  - 3.2.5.5 Best Practices for Nested Pipelines
-  - 3.2.5.6 Nested Pipelines in Real-World Scenarios
   - 3.3 Object Manipulation
   - 3.4 Enumeration and Measurement
+  - 3.4.1 Measure-Object: Stats and Text Properties
+  - 3.4.2 Compare-Object: Diffing Sets
+  - 3.4.3 Tee-Object: Splitting the Stream
+  - 3.4.4 Null Validation in the Pipeline
   - 3.4.5 Generating Ranges and Repetitions
   - 3.5 Putting It Together
 - id: ps-004
