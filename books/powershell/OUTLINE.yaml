@@ -145,7 +145,7 @@ chapters:
   - 4.1 Arithmetic and Assignment
   - 4.2 Comparison Operators
   - 4.3 Logical and Redirection Operators
-  - 4.4 Putting Operators Together in Real-World Expressions
+  - 4.4 Putting It Together
 - id: ps-005
   num: 5
   title: 5. Flow Control and Logic
@@ -518,3 +518,4 @@ chapters:
   sections:
   - 50.1 Official Documentation
   - 50.2 Community Resources
+
