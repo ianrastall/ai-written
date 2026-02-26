@@ -1,0 +1,26 @@
+version: 1
+generated: '2026-02-25'
+library:
+  title: LLM-assisted programming texts
+  description: Open textbook-style notes and tutorials across many languages, drafted with LLM assistance
+    and edited by a human.
+  license: CC-BY-4.0
+books:
+- id: powershell
+  title: 'PowerShell: From Zero to Toolmaker'
+  path: books/powershell
+  status: active
+  maturity: draft
+  outline: OUTLINE.yaml
+- id: ada
+  title: Ada (working title)
+  path: books/ada
+  status: planned
+  maturity: draft
+  outline: OUTLINE.yaml
+- id: assembler
+  title: Assembler (working title)
+  path: books/assembler
+  status: planned
+  maturity: draft
+  outline: OUTLINE.yaml

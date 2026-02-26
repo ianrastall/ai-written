@@ -1,0 +1,3 @@
+# Ada (working title)
+
+*Scaffold.*

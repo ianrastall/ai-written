@@ -1,0 +1,16 @@
+version: 1
+id: powershell
+title: 'PowerShell: From Zero to Toolmaker'
+edition: '0.2'
+language: en
+audience:
+- beginners
+- intermediate
+prerequisites:
+- Comfort with a command line (cmd.exe, Bash, or terminal emulator).
+chapter_count: 50
+chapters_dir: chapters
+outline: OUTLINE.yaml
+plan: PLAN.md
+status_notes: Chapters 1–2 stable; remaining chapters draft unless overridden.
+generated: '2026-02-25'

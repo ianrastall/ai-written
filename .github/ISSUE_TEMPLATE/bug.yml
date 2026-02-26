@@ -1,0 +1,26 @@
+name: Bug / Accuracy issue
+description: Report a technical error, outdated behavior, or broken example.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: where
+    attributes:
+      label: Where is the issue?
+      description: Link to the chapter/section and quote the relevant lines.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What’s wrong?
+      description: Explain the problem and why it’s incorrect.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+      description: Provide corrected text, code, or references if possible.
+    validations:
+      required: false

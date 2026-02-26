@@ -1,0 +1,522 @@
+version: 1
+generated: '2026-02-25'
+book:
+  id: powershell
+  title: 'PowerShell: From Zero to Toolmaker'
+  edition: '0.2'
+  status: active
+  notes: Chapters 1–2 marked stable; remaining chapters currently draft by default.
+parts:
+- id: foundations
+  title: Part I — Foundations
+  description: Why PowerShell exists, how to discover commands, basic syntax, flow control, and formatting.
+  chapters:
+  - ps-001
+  - ps-002
+  - ps-003
+  - ps-004
+  - ps-005
+  - ps-006
+- id: platform-data
+  title: Part II — Data and Platform Integration
+  description: Providers, regex/text parsing, structured data formats, management via CIM/WMI, .NET interop,
+    and scripting fundamentals.
+  chapters:
+  - ps-007
+  - ps-008
+  - ps-009
+  - ps-010
+  - ps-011
+  - ps-012
+- id: toolmaking
+  title: Part III — Toolmaking and Language Power
+  description: Advanced functions, pipeline binding, module authoring, and richer object models (custom
+    objects and classes).
+  chapters:
+  - ps-013
+  - ps-014
+  - ps-015
+  - ps-016
+  - ps-017
+  - ps-018
+- id: ops
+  title: Part IV — Operations and Automation at Scale
+  description: Background jobs, multi-threading, remoting, security, debugging, and practical API/reporting
+    workflows.
+  chapters:
+  - ps-019
+  - ps-020
+  - ps-021
+  - ps-022
+  - ps-023
+  - ps-024
+  - ps-025
+  - ps-026
+  - ps-027
+  - ps-028
+- id: enterprise
+  title: Part V — Configuration, Testing, and Enterprise Automation
+  description: DSC, Pester, CI/CD, and common enterprise automation domains (SQL, AD, cloud, GUI, perf).
+  chapters:
+  - ps-029
+  - ps-030
+  - ps-031
+  - ps-032
+  - ps-033
+  - ps-034
+  - ps-035
+  - ps-036
+  - ps-037
+  - ps-038
+- id: scale-capstone
+  title: Part VI — Platforms, Hardening, and Capstone
+  description: Events, Linux/cross-platform, Graph/external APIs, signing/PKI, error patterns, future
+    directions, and a capstone.
+  chapters:
+  - ps-039
+  - ps-040
+  - ps-041
+  - ps-042
+  - ps-043
+  - ps-044
+  - ps-045
+- id: appendices
+  title: Appendices
+  description: Quick references and resources.
+  chapters:
+  - ps-046
+  - ps-047
+  - ps-048
+  - ps-049
+  - ps-050
+chapters:
+- id: ps-001
+  num: 1
+  title: 1. Foundations of the Shell and The Monad Manifesto
+  file: chapters/01 - 1. Foundations of the Shell and The Monad Manifesto.md
+  status: stable
+  sections:
+  - 1.1 The History and Philosophy of PowerShell
+  - 1.2 The Console and Host Environments
+  - 1.3 The Help System and Discovery
+  - 1.4 Command Structure and Syntax
+  - '1.5 A First Real Session: Putting It Together'
+  - '1.6 PowerShell vs. Other Shells: A Mental Checklist'
+  - 1.7 Recommended Starter Environment
+- id: ps-002
+  num: 2
+  title: 2. The Type System and Variable Scope
+  file: chapters/02 - 2. The Type System and Variable Scope.md
+  status: stable
+  sections:
+  - 2.1 Variables and Assignment
+  - 2.2 The Primitive Types
+  - 2.3 Arrays and Collections
+  - 2.4 Scopes and Lifetime
+  - 2.5 Putting It Together
+  - 2.6 Memory Management and Garbage Collection
+- id: ps-003
+  num: 3
+  title: 3. The Object Pipeline
+  file: chapters/03 - 3. The Object Pipeline.md
+  status: draft
+  sections:
+  - 3.1 Pipeline Theory
+  - 3.2 Iteration in the Pipeline
+  - 3.2.1 ForEach-Object
+  - 3.2.2 The Begin and End Blocks
+  - 3.2.3 Performance: ForEach-Object vs. foreach statement
+  - 3.2.4 Parallel Processing in PowerShell 7+
+  - 3.2.5 Nested Pipelines and Scope
+  - 3.2.5.1 Variable Visibility
+  - 3.2.5.2 Pipeline Depth Limits
+  - 3.2.5.3 Nested Pipeline Patterns
+  - 3.2.5.4 Performance Implications
+  - 3.2.5.5 Best Practices for Nested Pipelines
+  - 3.2.5.6 Nested Pipelines in Real-World Scenarios
+  - 3.3 Object Manipulation
+  - 3.4 Enumeration and Measurement
+  - 3.4.5 Generating Ranges and Repetitions
+  - 3.5 Putting It Together
+- id: ps-004
+  num: 4
+  title: 4. Operators and Expressions
+  file: chapters/04 - 4. Operators and Expressions.md
+  status: draft
+  sections:
+  - 4.1 Arithmetic and Assignment
+  - 4.2 Comparison Operators
+  - 4.3 Logical and Redirection Operators
+  - 4.4 Putting Operators Together in Real-World Expressions
+- id: ps-005
+  num: 5
+  title: 5. Flow Control and Logic
+  file: chapters/05 - 5. Flow Control and Logic.md
+  status: draft
+  sections:
+  - 5.1 Conditional Branching
+  - 5.2 Looping Constructs
+  - 5.3 Exception and Error Handling
+- id: ps-006
+  num: 6
+  title: 6. The Formatting System
+  file: chapters/06 - 6. The Formatting System.md
+  status: draft
+  sections:
+  - 6.1 Default Formatting Views
+  - 6.2 The Format Data System
+- id: ps-007
+  num: 7
+  title: 7. Providers and Drives
+  file: chapters/07 - 7. Providers and Drives.md
+  status: draft
+  sections:
+  - 7.1 The Provider Model
+  - 7.2 Specific Provider Deep Dives
+- id: ps-008
+  num: 8
+  title: 8. Regular Expressions and Text Parsing
+  file: chapters/08 - 8. Regular Expressions and Text Parsing.md
+  status: draft
+  sections:
+  - 8.1 Regex Basics in PowerShell
+  - 8.2 Complex Text Manipulation
+- id: ps-009
+  num: 9
+  title: 9. Structured Data Handling
+  file: chapters/09 - 9. Structured Data Handling.md
+  status: draft
+  sections:
+  - 9.1 CSV Management
+  - 9.2 XML Manipulation
+  - 9.3 JSON and Modern Serialization
+- id: ps-010
+  num: 10
+  title: 10. CIM and WMI
+  file: chapters/10 - 10. CIM and WMI.md
+  status: draft
+  sections:
+  - 10.1 Windows Management Instrumentation (WMI) Legacy
+  - 10.2 Common Information Model (CIM)
+- id: ps-011
+  num: 11
+  title: 11. .NET Integration and Reflection
+  file: chapters/11 - 11. .NET Integration and Reflection.md
+  status: draft
+  sections:
+  - 11.1 Accessing the Framework
+  - 11.2 Advanced .NET Interop
+- id: ps-012
+  num: 12
+  title: 12. Scripting Basics
+  file: chapters/12 - 12. Scripting Basics.md
+  status: draft
+  sections:
+  - 12.1 The Script File (.ps1)
+  - 12.2 Interactive Input
+- id: ps-013
+  num: 13
+  title: '13. Advanced Functions: The CmdletBinding Attribute'
+  file: chapters/13 - 13. Advanced Functions The CmdletBinding Attribute.md
+  status: draft
+  sections:
+  - 13.1 Making Scripts Function-Like
+  - 13.2 Parameter Attributes
+  - 13.3 Input Validation
+- id: ps-014
+  num: 14
+  title: '14. Advanced Functions: Pipeline Processing'
+  file: chapters/14 - 14. Advanced Functions Pipeline Processing.md
+  status: draft
+  sections:
+  - 14.1 The Lifecycle of a Function
+  - 14.2 Advanced Techniques
+- id: ps-015
+  num: 15
+  title: 15. Module Development - Part 1
+  file: chapters/15 - 15. Module Development - Part 1.md
+  status: draft
+  sections:
+  - 15.1 Module Concepts
+  - 15.2 Script Modules (.psm1)
+- id: ps-016
+  num: 16
+  title: 16. Module Development - Part 2
+  file: chapters/16 - 16. Module Development - Part 2.md
+  status: draft
+  sections:
+  - 16.1 Module Manifests (.psd1)
+  - 16.2 Repository Management
+- id: ps-017
+  num: 17
+  title: 17. Creating Custom Objects
+  file: chapters/17 - 17. Creating Custom Objects.md
+  status: draft
+  sections:
+  - 17.1 The PSObject
+  - 17.2 Extending Objects
+- id: ps-018
+  num: 18
+  title: 18. PowerShell Classes (Class-Based DSL)
+  file: chapters/18 - 18. PowerShell Classes (Class-Based DSL).md
+  status: draft
+  sections:
+  - 18.1 Class Definitions
+  - 18.2 Object-Oriented Features
+- id: ps-019
+  num: 19
+  title: 19. Background Jobs
+  file: chapters/19 - 19. Background Jobs.md
+  status: draft
+  sections:
+  - 19.1 Standard Background Jobs
+  - 19.2 Scheduled Jobs
+- id: ps-020
+  num: 20
+  title: 20. Multi-threading and Asynchronous Execution
+  file: chapters/20 - 20. Multi-threading and Asynchronous Execution.md
+  status: draft
+  sections:
+  - 20.1 Threading Models
+  - 20.2 Runspace Management
+- id: ps-021
+  num: 21
+  title: 21. PowerShell Remoting \- Foundation
+  file: chapters/21 - 21. PowerShell Remoting - Foundation.md
+  status: draft
+  sections:
+  - 21.1 WinRM and WS-MAN
+  - 21.2 PSSessions
+- id: ps-022
+  num: 22
+  title: 22. PowerShell Remoting \- Advanced Configuration
+  file: chapters/22 - 22. PowerShell Remoting - Advanced Configuration.md
+  status: draft
+  sections:
+  - 22.1 Session Configurations (Endpoints)
+  - 22.2 JEA (Just Enough Administration)
+- id: ps-023
+  num: 23
+  title: 23. Security and Defensive Coding
+  file: chapters/23 - 23. Security and Defensive Coding.md
+  status: draft
+  sections:
+  - 23.1 Execution Security
+  - 23.2 Secure Credential Handling
+- id: ps-024
+  num: 24
+  title: 24. Debugging and Troubleshooting
+  file: chapters/24 - 24. Debugging and Troubleshooting.md
+  status: draft
+  sections:
+  - 24.1 The PSBreakPoint
+  - 24.2 Diagnostic Tools
+- id: ps-025
+  num: 25
+  title: 25. Regular Expressions \- Applied Workshop
+  file: chapters/25 - 25. Regular Expressions - Applied Workshop.md
+  status: draft
+  sections:
+  - 25.1 Data Extraction Patterns
+  - 25.2 Complex Replacements
+- id: ps-026
+  num: 26
+  title: 26. REST API Interaction
+  file: chapters/26 - 26. REST API Interaction.md
+  status: draft
+  sections:
+  - 26.1 HTTP Methods
+  - 26.2 API Design Patterns
+- id: ps-027
+  num: 27
+  title: 27. HTML Reporting and Dashboards
+  file: chapters/27 - 27. HTML Reporting and Dashboards.md
+  status: draft
+  sections:
+  - 27.1 Native HTML Generation
+  - 27.2 Advanced Reporting
+- id: ps-028
+  num: 28
+  title: 28. Controller Scripts and Toolmaking Architecture
+  file: chapters/28 - 28. Controller Scripts and Toolmaking Architecture.md
+  status: draft
+  sections:
+  - 28.1 The Controller/Worker Pattern
+  - 28.2 Building Interactive Tools
+- id: ps-029
+  num: 29
+  title: 29. Desired State Configuration (DSC) - Foundations
+  file: chapters/29 - 29. Desired State Configuration (DSC) - Foundations.md
+  status: draft
+  sections:
+  - 29.1 Infrastructure as Code
+  - 29.2 Push vs Pull Modes
+- id: ps-030
+  num: 30
+  title: 30. Desired State Configuration (DSC) - Advanced
+  file: chapters/30 - 30. Desired State Configuration (DSC) - Advanced.md
+  status: draft
+  sections:
+  - 30.1 Resource Development
+  - 30.2 DSC in the Modern Era
+- id: ps-031
+  num: 31
+  title: 31. Unit Testing with Pester
+  file: chapters/31 - 31. Unit Testing with Pester.md
+  status: draft
+  sections:
+  - 31.1 Test-Driven Development (TDD)
+  - 31.2 Mocking and Isolation
+- id: ps-032
+  num: 32
+  title: 32. Build Pipelines and CI/CD
+  file: chapters/32 - 32. Build Pipelines and CICD.md
+  status: draft
+  sections:
+  - 32.1 Build Automation
+  - 32.2 Continuous Integration
+- id: ps-033
+  num: 33
+  title: 33. SQL Server Automation
+  file: chapters/33 - 33. SQL Server Automation.md
+  status: draft
+  sections:
+  - 33.1 The SqlServer Module
+  - 33.2 SMO (Server Management Objects)
+- id: ps-034
+  num: 34
+  title: 34. Active Directory Management
+  file: chapters/34 - 34. Active Directory Management.md
+  status: draft
+  sections:
+  - 34.1 The ActiveDirectory Module
+  - 34.2 Advanced AD Topics
+- id: ps-035
+  num: 35
+  title: 35. Azure Automation (Cloud)
+  file: chapters/35 - 35. Azure Automation (Cloud).md
+  status: draft
+  sections:
+  - 35.1 The Az Module
+  - 35.2 Serverless PowerShell
+- id: ps-036
+  num: 36
+  title: 36. Working with Files and Formats (Advanced)
+  file: chapters/36 - 36. Working with Files and Formats (Advanced).md
+  status: draft
+  sections:
+  - 36.1 Binary Data
+  - 36.2 Specialized Formats
+- id: ps-037
+  num: 37
+  title: 37. User Interface Design (GUI)
+  file: chapters/37 - 37. User Interface Design (GUI).md
+  status: draft
+  sections:
+  - 37.1 Windows Forms (WinForms)
+  - 37.2 Windows Presentation Foundation (WPF)
+- id: ps-038
+  num: 38
+  title: 38. Performance Optimization
+  file: chapters/38 - 38. Performance Optimization.md
+  status: draft
+  sections:
+  - 38.1 Measuring Code
+  - 38.2 Optimization Strategies
+- id: ps-039
+  num: 39
+  title: 39. Event Handling
+  file: chapters/39 - 39. Event Handling.md
+  status: draft
+  sections:
+  - 39.1 The Eventing Engine
+  - 39.2 Practical Eventing
+- id: ps-040
+  num: 40
+  title: 40. PowerShell Core on Linux
+  file: chapters/40 - 40. PowerShell Core on Linux.md
+  status: draft
+  sections:
+  - 40.1 Architecture Differences
+  - 40.2 Linux Admin via PowerShell
+- id: ps-041
+  num: 41
+  title: 41. Integrating with External APIs (Graph)
+  file: chapters/41 - 41. Integrating with External APIs (Graph).md
+  status: draft
+  sections:
+  - 41.1 Microsoft Graph
+  - 41.2 AWS Tools for PowerShell
+- id: ps-042
+  num: 42
+  title: 42. Code Signing and PKI
+  file: chapters/42 - 42. Code Signing and PKI.md
+  status: draft
+  sections:
+  - 42.1 Public Key Infrastructure
+  - 42.2 Signing Scripts
+- id: ps-043
+  num: 43
+  title: 43. Error Handling Patterns at Scale
+  file: chapters/43 - 43. Error Handling Patterns at Scale.md
+  status: draft
+  sections:
+  - 43.1 Robustness Patterns
+  - 43.2 Global Error Handling
+- id: ps-044
+  num: 44
+  title: 44. Future Directions and Community
+  file: chapters/44 - 44. Future Directions and Community.md
+  status: draft
+  sections:
+  - 44.1 The Open Source Project
+  - 44.2 Emerging Trends
+- id: ps-045
+  num: 45
+  title: 45. Capstone Project
+  file: chapters/45 - 45. Capstone Project.md
+  status: draft
+  sections:
+  - 45.1 Project Requirements
+  - 45.2 Scenario Options
+  - 45.3 Bringing It All Together
+- id: ps-046
+  num: 46
+  title: '46. Appendix A: Syntax and Operator Quick Reference'
+  file: chapters/46 - 46. Appendix A Syntax and Operator Quick Reference.md
+  status: draft
+  sections:
+  - 46.1 Automatic Variables Reference
+  - 46.2 Operator Cheat Sheet
+- id: ps-047
+  num: 47
+  title: '47. Appendix B: Recommended Tools and Ecosystem'
+  file: chapters/47 - 47. Appendix B Recommended Tools and Ecosystem.md
+  status: draft
+  sections:
+  - 47.1 The Editor Ecosystem
+  - 47.2 Must-Have Community Modules
+- id: ps-048
+  num: 48
+  title: '48. Appendix C: .NET Type Accelerator Reference'
+  file: chapters/48 - 48. Appendix C .NET Type Accelerator Reference.md
+  status: draft
+  sections:
+  - 48.1 Primitive and Basic Types
+  - 48.2 Collections and Data Structures
+- id: ps-049
+  num: 49
+  title: '49. Appendix D: Keyboard Shortcuts and Keybindings'
+  file: chapters/49 - 49. Appendix D Keyboard Shortcuts and Keybindings.md
+  status: draft
+  sections:
+  - 49.1 Editing and Navigation (PSReadLine)
+  - 49.2 Visual Studio Code Shortcuts
+- id: ps-050
+  num: 50
+  title: '50. Appendix E: Bibliography and Resources'
+  file: chapters/50 - 50. Appendix E Bibliography and Resources.md
+  status: draft
+  sections:
+  - 50.1 Official Documentation
+  - 50.2 Community Resources

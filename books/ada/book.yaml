@@ -1,0 +1,13 @@
+version: 1
+id: ada
+title: Ada (working title)
+edition: '0.1'
+language: en
+audience:
+- beginners
+chapter_count: 0
+chapters_dir: chapters
+outline: OUTLINE.yaml
+plan: PLAN.md
+status_notes: Placeholder scaffold. Fill in as content is added.
+generated: '2026-02-25'
