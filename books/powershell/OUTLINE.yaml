@@ -5,7 +5,7 @@ book:
   title: 'PowerShell: From Zero to Toolmaker'
   edition: '0.2'
   status: active
-  notes: Chapters 1–2 marked stable; remaining chapters currently draft by default.
+  notes: Chapters 1–3 marked stable; remaining chapters currently draft by default.
 parts:
 - id: foundations
   title: Part I — Foundations
@@ -119,7 +119,7 @@ chapters:
   num: 3
   title: 3. The Object Pipeline
   file: chapters/03 - 3. The Object Pipeline.md
-  status: draft
+  status: stable
   sections:
   - 3.1 Pipeline Theory
   - 3.2 Iteration in the Pipeline
