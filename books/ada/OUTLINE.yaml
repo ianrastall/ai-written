@@ -1,9 +1,279 @@
 version: 1
-generated: '2026-02-25'
+generated: '2026-02-26'
 book:
   id: ada
-  title: Ada (working title)
+  title: 'Ada: Engineering Robust and Reliable Software'
   edition: '0.1'
-  status: planned
-parts: []
-chapters: []
+  status: active
+  notes: Expanding on the early drafts to reach a robust 40-chapter academic text.
+parts:
+  - id: foundations
+    title: Part I - Foundations of the Ada Language
+    description: History, philosophy, toolchain orchestration, syntax, and fundamental scalar types.
+    chapters:
+      - ada-001
+      - ada-002
+      - ada-003
+      - ada-004
+      - ada-005
+      - ada-006
+  - id: data-structures
+    title: Part II - Data Structures and Memory Management
+    description: Composite types, dynamic memory, safe pointers, and string handling.
+    chapters:
+      - ada-007
+      - ada-008
+      - ada-009
+      - ada-010
+      - ada-011
+      - ada-012
+  - id: architecture
+    title: Part III - Modularity and Object-Oriented Programming
+    description: Packages, generics, tagged types, interfaces, and dispatching.
+    chapters:
+      - ada-013
+      - ada-014
+      - ada-015
+      - ada-016
+      - ada-017
+      - ada-018
+  - id: concurrency
+    title: Part IV - Concurrency and Tasking
+    description: Native tasking, rendezvous, protected objects, and the Ravenscar profile.
+    chapters:
+      - ada-019
+      - ada-020
+      - ada-021
+      - ada-022
+      - ada-023
+      - ada-024
+  - id: contracts
+    title: Part V - Design by Contract and Formal Verification
+    description: Exceptions, pre/postconditions, type invariants, and the SPARK subset.
+    chapters:
+      - ada-025
+      - ada-026
+      - ada-027
+      - ada-028
+      - ada-029
+      - ada-030
+  - id: systems
+    title: Part VI - Systems Programming and Interfacing
+    description: Representation clauses, hardware interfacing, C interoperability, and low-level control.
+    chapters:
+      - ada-031
+      - ada-032
+      - ada-033
+      - ada-034
+      - ada-035
+      - ada-036
+  - id: advanced
+    title: Part VII - Ecosystem, Advanced Features, and Capstone
+    description: Ada 2022 features, parallel constructs, the Alire ecosystem, and a capstone project.
+    chapters:
+      - ada-037
+      - ada-038
+      - ada-039
+      - ada-040
+
+chapters:
+  - id: ada-001
+    num: 1
+    title: 1. An Extensive Introduction to Ada
+    file: chapters/01 - 1. An Extensive Introduction to Ada.md
+    status: draft
+  - id: ada-002
+    num: 2
+    title: 2. Toolchain, Project Layout, and Coding Conventions
+    file: chapters/02 - 2. Toolchain, Project Layout, and Coding Conventions.md
+    status: draft
+  - id: ada-003
+    num: 3
+    title: 3. Language Fundamentals and Lexical Elements
+    file: chapters/03 - 3. Language Fundamentals and Lexical Elements.md
+    status: draft
+  - id: ada-004
+    num: 4
+    title: 4. Scalar Data Types and Declarations
+    file: chapters/04 - 4. Scalar Data Types and Declarations.md
+    status: draft
+  - id: ada-005
+    num: 5
+    title: 5. Control Flow and Statements
+    file: chapters/05 - 5. Control Flow and Statements.md
+    status: draft
+  - id: ada-006
+    num: 6
+    title: 6. Subprograms: Procedures and Functions
+    file: chapters/06 - 6. Subprograms - Procedures and Functions.md
+    status: draft
+  - id: ada-007
+    num: 7
+    title: 7. Composite Types: Arrays and Strings
+    file: chapters/07 - 7. Composite Types - Arrays and Strings.md
+    status: draft
+  - id: ada-008
+    num: 8
+    title: 8. Composite Types: Records and Discriminants
+    file: chapters/08 - 8. Composite Types - Records and Discriminants.md
+    status: draft
+  - id: ada-009
+    num: 9
+    title: 9. Access Types and Safe Pointers
+    file: chapters/09 - 9. Access Types and Safe Pointers.md
+    status: draft
+  - id: ada-010
+    num: 10
+    title: 10. Dynamic Memory Management and Storage Pools
+    file: chapters/10 - 10. Dynamic Memory Management and Storage Pools.md
+    status: draft
+  - id: ada-011
+    num: 11
+    title: 11. The Ada.Containers Library
+    file: chapters/11 - 11. The Ada.Containers Library.md
+    status: draft
+  - id: ada-012
+    num: 12
+    title: 12. Advanced String and Text Handling
+    file: chapters/12 - 12. Advanced String and Text Handling.md
+    status: draft
+  - id: ada-013
+    num: 13
+    title: 13. Packages and Visibility Control
+    file: chapters/13 - 13. Packages and Visibility Control.md
+    status: draft
+  - id: ada-014
+    num: 14
+    title: 14. Generics and Parametric Polymorphism
+    file: chapters/14 - 14. Generics and Parametric Polymorphism.md
+    status: draft
+  - id: ada-015
+    num: 15
+    title: 15. Object-Oriented Programming: Tagged Types
+    file: chapters/15 - 15. Object-Oriented Programming - Tagged Types.md
+    status: draft
+  - id: ada-016
+    num: 16
+    title: 16. Polymorphism and Dynamic Dispatch
+    file: chapters/16 - 16. Polymorphism and Dynamic Dispatch.md
+    status: draft
+  - id: ada-017
+    num: 17
+    title: 17. Interfaces and Multiple Inheritance
+    file: chapters/17 - 17. Interfaces and Multiple Inheritance.md
+    status: draft
+  - id: ada-018
+    num: 18
+    title: 18. Controlled Types and Resource Management
+    file: chapters/18 - 18. Controlled Types and Resource Management.md
+    status: draft
+  - id: ada-019
+    num: 19
+    title: 19. Introduction to Concurrent Programming
+    file: chapters/19 - 19. Introduction to Concurrent Programming.md
+    status: draft
+  - id: ada-020
+    num: 20
+    title: 20. Task Lifecycle and Simple Synchronization
+    file: chapters/20 - 20. Task Lifecycle and Simple Synchronization.md
+    status: draft
+  - id: ada-021
+    num: 21
+    title: 21. Safe Concurrency with Protected Objects
+    file: chapters/21 - 21. Safe Concurrency with Protected Objects.md
+    status: draft
+  - id: ada-022
+    num: 22
+    title: 22. Advanced Tasking and Rendezvous
+    file: chapters/22 - 22. Advanced Tasking and Rendezvous.md
+    status: draft
+  - id: ada-023
+    num: 23
+    title: 23. Real-Time Systems and Scheduling
+    file: chapters/23 - 23. Real-Time Systems and Scheduling.md
+    status: draft
+  - id: ada-024
+    num: 24
+    title: 24. The Ravenscar and Jorvik Profiles
+    file: chapters/24 - 24. The Ravenscar and Jorvik Profiles.md
+    status: draft
+  - id: ada-025
+    num: 25
+    title: 25. Exceptions and Predictable Failure Handling
+    file: chapters/25 - 25. Exceptions and Predictable Failure Handling.md
+    status: draft
+  - id: ada-026
+    num: 26
+    title: 26. Programming by Contract: Pre- and Postconditions
+    file: chapters/26 - 26. Programming by Contract - Pre- and Postconditions.md
+    status: draft
+  - id: ada-027
+    num: 27
+    title: 27. Type Invariants and Subtype Predicates
+    file: chapters/27 - 27. Type Invariants and Subtype Predicates.md
+    status: draft
+  - id: ada-028
+    num: 28
+    title: 28. Introduction to Formal Verification with SPARK
+    file: chapters/28 - 28. Introduction to Formal Verification with SPARK.md
+    status: draft
+  - id: ada-029
+    num: 29
+    title: 29. Proving Absence of Run-Time Errors (AoRTE)
+    file: chapters/29 - 29. Proving Absence of Run-Time Errors (AoRTE).md
+    status: draft
+  - id: ada-030
+    num: 30
+    title: 30. Advanced SPARK: Ghost Code and Loop Invariants
+    file: chapters/30 - 30. Advanced SPARK - Ghost Code and Loop Invariants.md
+    status: draft
+  - id: ada-031
+    num: 31
+    title: 31. Representation Clauses and Data Layout
+    file: chapters/31 - 31. Representation Clauses and Data Layout.md
+    status: draft
+  - id: ada-032
+    num: 32
+    title: 32. Low-Level Programming and System Attributes
+    file: chapters/32 - 32. Low-Level Programming and System Attributes.md
+    status: draft
+  - id: ada-033
+    num: 33
+    title: 33. Interfacing with C and Other Languages
+    file: chapters/33 - 33. Interfacing with C and Other Languages.md
+    status: draft
+  - id: ada-034
+    num: 34
+    title: 34. Interrupt Handling and Hardware Interaction
+    file: chapters/34 - 34. Interrupt Handling and Hardware Interaction.md
+    status: draft
+  - id: ada-035
+    num: 35
+    title: 35. Ada.Numerics and Scientific Computing
+    file: chapters/35 - 35. Ada.Numerics and Scientific Computing.md
+    status: draft
+  - id: ada-036
+    num: 36
+    title: 36. Working with the Operating System and Files
+    file: chapters/36 - 36. Working with the Operating System and Files.md
+    status: draft
+  - id: ada-037
+    num: 37
+    title: 37. Advanced Language Features (Ada 2022 Parallelism)
+    file: chapters/37 - 37. Advanced Language Features (Ada 2022 Parallelism).md
+    status: draft
+  - id: ada-038
+    num: 38
+    title: 38. Distributed Systems (Annex E)
+    file: chapters/38 - 38. Distributed Systems (Annex E).md
+    status: draft
+  - id: ada-039
+    num: 39
+    title: 39. Testing, QA, and CI/CD for Ada
+    file: chapters/39 - 39. Testing, QA, and CI-CD for Ada.md
+    status: draft
+  - id: ada-040
+    num: 40
+    title: 40. Capstone Project: A High-Integrity Telemetry System
+    file: chapters/40 - 40. Capstone Project - A High-Integrity Telemetry System.md
+    status: draft
